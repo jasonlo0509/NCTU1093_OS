@@ -11,7 +11,7 @@ int main()
         exit(-1);
     }
     else if (pid == 0) { /* child process */
-        execlp("/bin/ls", "ls", NULL);
+        execlp("/bin/ls", "ls -al", NULL);
     }
     else { /* parent process */
         /* parent will wait for the child to complete */
